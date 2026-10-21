@@ -43,9 +43,25 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
+}
+
+.block_left_inner{
+    width: 80px;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: center;
+}
+
+.logo_setting{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }
 
 .nav_Page_N1{
@@ -65,7 +81,7 @@ html{
     text-decoration: none;
 }
 
-.armor_table{
+.reservation_table{
     width: 145px;
     height: 42px;
     background-color: #B59571;
@@ -77,6 +93,7 @@ html{
     align-content: center;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .text_Page_N1{
@@ -524,4 +541,76 @@ form ::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.reservation_button{
+    text-decoration: none;
+}
+
+.setting_main_Page{
+    background-color: #333333;
+    width: 1920px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting_inner{
+    width: 237px;
+    height: 90%px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 153px;
+    flex-wrap: wrap;
+}
+
+.top_logo_settings{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.mid_info_settings a{
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+}
+
+.mid_info_settings{
+    height: 428px;
+    width: 237px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.close_setting{
+    width: 40px;
+    height: 40px;
+}
+
+.reservation_table_settings{
+    width: 237px;
+    height: 74px;
+    background-color: #B59571;
+    font-size: 24px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social_setting{
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 40px;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
 }
