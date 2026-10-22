@@ -46,6 +46,11 @@ html{
     justify-content: center
 }
 
+.block_left_inner img{
+    cursor: pointer;
+}
+
+
 .block_left_inner{
     width: 80px;
     height: 93%;
@@ -305,6 +310,7 @@ html{
     font-size: 20px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 .delivery_second_button_Page_N1{
@@ -313,6 +319,7 @@ html{
     font-size: 20px;
     font-weight: bold;
     border: 1px solid rgba(51, 51, 51, 0.2);
+    cursor: pointer;
 }
 
 .contacts_Page_N1{
@@ -436,6 +443,7 @@ html{
     color: white;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .contacts_button_Page_N1{
@@ -634,6 +642,10 @@ form ::placeholder{
     color: white;
 }
 
+.bottom_inner_Page_N1 img{
+    cursor: pointer;
+}
+
 .bottom_inner_Page_N1{
     width: 1297px;
     height: 46px;
@@ -654,7 +666,7 @@ form ::placeholder{
 
 .header_Page_N2{
     width: 1608px;
-    height: 86px;
+    min-height: 86px;
     display: flex;
     gap: 30px;
     justify-content: end;
@@ -669,7 +681,7 @@ form ::placeholder{
 
 .main_menu_Page_2{
     width: 1608px;
-    height: 1458px;
+    height: 1380px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -686,7 +698,7 @@ form ::placeholder{
 
 .menu_position{
     width: 1586px;
-    height: 52px;
+    min-height: 52px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -780,6 +792,10 @@ form ::placeholder{
     gap: 30px;
 }
 
+.bottom_inner_Page_N2 img{
+    cursor: pointer;
+}
+
 .bottom_inner_Page_N2{
     height: 46px;
     width: 1297px;
@@ -812,6 +828,7 @@ form ::placeholder{
     height: 766px;
     display: flex;
     justify-content: end;
+    gap: 134px;
 }
 
 .order_to_buy_inner{
@@ -819,16 +836,22 @@ form ::placeholder{
     height: 766px;
 }
 
-img.main_img_menu {
+.main_img_menu img{
     width: 416px;
     height: 317px;
 }
 
-img.secont_img_menu {
+img:hover.secont_img_menu{
+    transform: scale(2);
+}
+
+img.secont_img_menu{
     width: 122px;
     height: 93px;
     display: flex;
     gap: 24px;
+    transition: transform 0.7s;
+    cursor: pointer;
 }
 
 .order_to_buy_left {
@@ -845,6 +868,44 @@ img.secont_img_menu {
 .order_to_buy_right {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+
+
+.button_number_buy h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.button_number_buy h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button_number_buy input {
+    width: 84px;
+    height: 58px;
+    border: 1px solid #c1c1c1;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 25px ;
+}
+
+.button_number_buy button {
+    background-color: #B59571;
+    width: 151px;
+    height: 58px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input_button_flex{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .button_number_buy {
@@ -853,3 +914,60 @@ img.secont_img_menu {
     flex-direction: column;
     gap: 35px;
 }
+
+.name_price h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.name_price p{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.name_price span{
+    font-size: 16px;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.name_price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.options_to_food div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.options_to_food div p span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+}
+
+.options_to_food div p {
+    width: 253px;
+    height: 22px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.options_to_food input{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.options_to_food {
+    width: 306px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
