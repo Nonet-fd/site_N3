@@ -84,6 +84,7 @@ html{
 .nav_Page_N1 a{
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .reservation_table{
@@ -498,6 +499,7 @@ html{
     font-weight: bold;
     background-color: #B59571;
     border: none;
+    cursor: pointer;
 }
 
 .reservation_info{
