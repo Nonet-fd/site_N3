@@ -26,12 +26,12 @@ html{
 }
 
 .move_Page_N1{
-    height: 1150px;
+    height: auto;
 }
 
 .Page_N1{
-    height: 1000px;
-    width: 1920px;
+    height: auto;
+    width: 100%;
     background-image: url(imgs/lobby.png);
 }
 
@@ -110,7 +110,7 @@ html{
     justify-content: end;
     text-align: left;
     font-weight: bold;
-    font-size: 54px;
+    font-size: clamp(28px, 7vw, 54px);
     color: white;
 }
 
@@ -122,8 +122,8 @@ html{
 }
 
 .Page_N1_background{
-    width: 1920px;
-    height: 3880px;
+    width: 100%;
+    height: auto;
     background-color: white;
     display: flex;
     gap: 150px;
@@ -162,7 +162,7 @@ html{
 }
 
 .about_title_Page_N1{
-    font-size: 64px;
+    font-size: clamp(32px, 8vw, 64px);
     font-weight: bold;
     width: 196px;
     height: 302px;
@@ -201,7 +201,7 @@ html{
 }
 
 .menu_title_Page_N1{
-    font-size: 64px;
+    font-size: clamp(32px, 8vw, 64px);
     font-weight: bold;
     width: 330px;
     height: 302px;
@@ -278,7 +278,7 @@ html{
 }
 
 .delivery_title_Page_N1{
-    font-size: 64px;
+    font-size: clamp(32px, 8vw, 64px);
     font-weight: bold;
     width: 306px;
     height: 260px;
@@ -359,7 +359,7 @@ html{
 }
 
 .digit_span{
-    font-size: 64px;
+    font-size: clamp(32px, 8vw, 64px);
     color: #B59571;
     line-height: 120%;
     font-weight: bold;
@@ -456,8 +456,9 @@ html{
 }
 
 .reservation{
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
     background-image: url(imgs/reservation_background.png);
     background-repeat: no-repeat;
     display: flex;
@@ -560,8 +561,9 @@ form ::placeholder{
 
 .setting_main_Page{
     background-color: #333333;
-    width: 1920px;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,8 +629,8 @@ form ::placeholder{
 }
 
 .bottom_line_Page_N1{
-    height: 120px;
-    width: 1920px;
+    height: auto;
+    width: 100%;
     background-color: #333333;
     display: flex;
     align-items: center;
@@ -660,7 +662,7 @@ form ::placeholder{
 .Page_N2_background{
     background-color: white;
     width: 100%;
-    height: 2328px;
+    height: auto;
     display: flex;
     gap: 100px;
     flex-direction: column;
@@ -818,8 +820,8 @@ form ::placeholder{
 
 .Page_N3_background{
     background-color: white;
-    width: 1920px;
-    height: 1892px;
+    width: 100%;
+    height: auto;
     display: flex;
     gap: 100px;
     flex-direction: column;
@@ -973,3 +975,143 @@ img.secont_img_menu{
     align-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 768px){
+
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.block_left_frame {
+    display: none;
+}
+
+.Page_N1_background{
+    width: 100%;
+    height: auto;
+    gap: 60px;
+    background-size: cover;
+}
+
+.move_Page_N1{
+    height: auto;
+}
+
+.about_Page_N1{
+    width: 100%;
+    height: auto;
+}
+
+.Page_N1{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_Page_N1 {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.text_Page_N1 {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    padding: 20px;
+}
+
+.text_Page_N1 h1 {
+    width: 100%;
+    height: auto;
+    font-size: clamp(28px, 8vw, 54px);
+}
+
+.about_Page_N1, .menu_Page_N1, .delivery_Page_N1 { 
+    width: 100%; 
+    height: auto; 
+}
+
+.about_inner_Page_N1, .menu_inner_Page_N1, .delivery_inner_Page_N1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ .locked_text { 
+    position: static; 
+}
+
+.about_title_Page_N1, .menu_title_Page_N1, .delivery_title_Page_N1 {
+    width: 100%;
+    height: auto;
+    font-size: clamp(32px, 9vw, 64px);
+}
+
+.about_text_Page_N1, .menu_text_Page_N1, .delivery_text_Page_N1 { 
+    width: 100%; 
+    height: auto; 
+}
+
+.menu_cards_Page_N1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu_card_left_Page_N1, .menu_card_right_Page_N1 {
+    width: 100%;
+    max-width: 416px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.menu_links_Page_N1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu_card_left_Page_N1 img, .menu_card_right_Page_N1 img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.delivery_button_Page_N1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.delivery_first_button_Page_N1, .delivery_second_button_Page_N1 { 
+    width: 100%; 
+}
+
+.bottom_line_Page_N1 { 
+    width: 100%;
+    height: auto; 
+    padding: 20px; 
+}
+
+.bottom_inner_Page_N1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+}
